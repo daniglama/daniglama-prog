@@ -1,5 +1,3 @@
-
-
 //ejercicio1
 
 public class Main {
@@ -155,7 +153,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-           Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
         System.out.print("Introduce el primer numero ");
         int numero1 = teclado.nextInt();
 
@@ -186,6 +184,57 @@ public class Main {
         System.out.print("Introduce el segundo  numero ");
         int numero2 = teclado.nextInt();
 
+        double suma = numero1 + numero2; //ecuaciones
+        double resta = numero1 - numero2;
+        double producto = numero1 * numero2;
+        double division = numero1 / numero2;
+
+        System.out.println("Suma: " + suma); //resultados
+        System.out.println("Resta: " + resta);
+        System.out.println("Producto: " + producto);
+        System.out.println("División: " + division);
+
+    }
+}
+//ejercicio12
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Introduce el primer numero ");
+        int numero1 = teclado.nextInt();
+
+        System.out.print("Introduce el segundo  numero ");
+        int numero2 = teclado.nextInt();
+
+        int mayor = Math.max(numero1, numero2);
+
+        System.out.println("El mayor es: " + mayor);
+    }
+}
+
+//ejercicio13
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Introduce el numero ");
+        int numero = teclado.nextInt();
+
+        String[] resultado = {"negativo", "positivo", "positivo"};
+
+        int posicion = (int) Math.signum(numero) + 1;
+
+        System.out.println("El número es " + resultado[posicion]);
 
     }
 }
