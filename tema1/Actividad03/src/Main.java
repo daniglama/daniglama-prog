@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Introduce una cantidad multiplo de 5: ");
-        Int cantidad = sc.nextInt();
+        int cantidad = sc.nextInt();
 
         int billetes500 = cantidad / 500;
         cantidad = cantidad % 500;
